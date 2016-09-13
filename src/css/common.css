@@ -1,17 +1,16 @@
-@charset "utf-8";.ov_h {
+@charset "utf-8";
+.ov_h {
     overflow: hidden
 }
 
 html,body {
     height: 100%
 }
-
 #header {
     width: 100%;
     background: rgba(0,0,0,0.8);
     text-align: center;
-    height: 56.66px;
-    padding: 5px 0;
+    height: 45px;
     position: fixed;
     top: 0px;
     left: 0;
@@ -25,11 +24,6 @@ html,body {
     transition-duration: .4s;
     z-index: 999
 }
-
-#header.main_h {
-    background: none
-}
-
 #header.nav_open {
     -webkit-transform: translateX(-260px);
     -moz-transform: translateX(-260px);
@@ -51,8 +45,8 @@ html,body {
 #header .auction,#header button.auction {
     background: none;
     display: inline-block;
-    width: 20%;
-    padding: 7px 6px;
+    width: 80px;
+    padding:3px;
     border-radius: 30px;
     -moz-border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -60,23 +54,19 @@ html,body {
     text-align: center;
     color: #fff;
     line-height: 24px;
-    position: absolute;
-    left: 3%;
-    top: 18%;
-    font-size: .85em
+    position:absolute;
+    left:10px;
+    top:6px;
+    font-size:12px;
 }
 
 #header .logo {
-    display: inline-block;
-    width: 64px;
-    height: 46px;
-    margin-top: 3px
+
 }
 
 #header .logo img {
-    display: inline-block;
-    width: 100%;
-    height: 46px;
+    width:51px;
+    margin-top:5px;
 }
 
 #header button.menu {

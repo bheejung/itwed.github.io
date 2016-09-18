@@ -106,13 +106,10 @@
             <a href="#" class="link_type_tag"><span>웨딩가이드</span></a>
         </div>
         <div class="section_rolling">
-            <ul>
+            <ul class="bxslider">
                 <li><a href="#"><img src="img/main/slide_event.png" alt="슬라이드 이벤트 슬라이드 이벤트 "></a></li>
-            </ul>
-            <ul class="btn_rolling">
-                <li><a href="#" role="button"><span class="hidden">1</span></a></li>
-                <li><a href="#" role="button"><span class="hidden">2</span></a></li>
-                <li><a href="#" role="button"><span class="hidden">3</span></a></li>
+                <li><a href="#"><img src="img/main/slide_event.png" alt="슬라이드 이벤트 슬라이드 이벤트 "></a></li>
+                <li><a href="#"><img src="img/main/slide_event.png" alt="슬라이드 이벤트 슬라이드 이벤트 "></a></li>
             </ul>
         </div>
         <div class="section_pick main_ct">
@@ -151,8 +148,14 @@
         <a href="#"><img src="" alt="행복한 결혼을 만들어 갈 웨딩플래너 모집"></a>
         </div>
     </div>
-    <!-- menu test용 script 실 개발시 삭제 -->
+    <!-- menu test용 script -->
 	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="http://m.itwed.co.kr/js/main.js"></script>
+    <script type="text/javascript" src="http://m.itwed.co.kr/js/jquery/jquery.bxslider.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $('.bxslider').bxSlider();
+    });
+    </script>
 </body>
 </html>

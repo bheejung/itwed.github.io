@@ -5,7 +5,7 @@
 }
 .main_ct{background-color:#fff;border-top:1px solid #dedede;border-bottom:1px solid #dedede}
 .aside_snb{width:100%;height:69px;background-color:#ffffff;border-top:1px solid #dedede;border-bottom:1px solid #dedede;padding-bottom:11px;box-sizing:border-box;margin-bottom:6px}
-.aside_snb .inner{display:table;width:100%;height:100%}
+.aside_snb .inner{display:table;width:100%;height:100%;table-layout:fixed}
 .aside_snb .inner .list_snb{display:table-cell;text-align:center;vertical-align:bottom}
 .aside_snb .inner .link_snb{display:block;}
 

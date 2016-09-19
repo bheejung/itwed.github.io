@@ -81,10 +81,10 @@
     <div id="contents" class="main">
         <div class="aside_snb main_ct">
             <ul class="inner">
-                <li><span class="snb_name">웨딩홀</span></li>
-                <li><span class="snb_name">스튜디오</span></li>
-                <li><span class="snb_name">드레스</span></li>
-                <li><span class="snb_name">메이크업</span></li>
+                <li class="list_snb"><a href="#" class="link_snb"><i class="ico_snb wedding"></i><span class="snb_name">웨딩홀</span></a></li>
+                <li class="list_snb"><a href="#" class="link_snb"><i class="ico_snb studio"></i><span class="snb_name">스튜디오</span></a></li>
+                <li class="list_snb"><a href="#" class="link_snb"><i class="ico_snb dress"></i><span class="snb_name">드레스</span></a></li>
+                <li class="list_snb"><a href="#" class="link_snb"><i class="ico_snb makeup"></i><span class="snb_name">메이크업</span></a></li>
             </ul>
         </div>
         <div class="section_auction main_ct">
@@ -117,35 +117,45 @@
             <h2 class="title">아이티웨딩 추천업체</h2>
             <div class="tab_pick">
                 <ul class="tab_inner">
-                    <li class="on"><a href="#" class="link_tab">스튜디오</a></li>
-                    <li><a href="#" class="link_tab">드레스</a></li>
-                    <li><a href="#" class="link_tab">메이크업</a></li>
+                    <li class="on" role="button"><a href="#" class="link_tab">스튜디오</a></li>
+                    <li role="button"><a href="#" class="link_tab">드레스</a></li>
+                    <li role="button"><a href="#" class="link_tab">메이크업</a></li>
                 </ul>
             </div>
             <div class="rolling_pick">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="#" alt="">
-                            <span class="pick_desc">24/7 스튜디오</span>
-                        </a>
-                    </li>
+                <ul class="bxslider studio">
+                    <li class="item_pick"><a href="#"><img src="img/main/@tmp_tab.png" alt=""><span class="pick_desc">24/7 스튜디오1</span></a></li>
+                    <li class="item_pick"><a href="#"><img src="img/main/@tmp_tab.png" alt=""><span class="pick_desc">24/7 스튜디오2</span></a></li>
+                    <li class="item_pick"><a href="#"><img src="img/main/@tmp_tab.png" alt=""><span class="pick_desc">24/7 스튜디오3</span></a></li>
+                    <li class="item_pick"><a href="#"><img src="img/main/@tmp_tab.png" alt=""><span class="pick_desc">24/7 스튜디오4</span></a></li>
+                </ul>
+                <ul class="bxslider dress">
+                    <li class="item_pick"><a href="#"><img src="img/main/@tmp_tab.png" alt=""><span class="pick_desc">24/7 드레스1</span></a></li>
+                    <li class="item_pick"><a href="#"><img src="img/main/@tmp_tab.png" alt=""><span class="pick_desc">24/7 드레스2</span></a></li>
+                    <li class="item_pick"><a href="#"><img src="img/main/@tmp_tab.png" alt=""><span class="pick_desc">24/7 드레스3</span></a></li>
+                    <li class="item_pick"><a href="#"><img src="img/main/@tmp_tab.png" alt=""><span class="pick_desc">24/7 드레스4</span></a></li>
+                </ul>
+                <ul class="bxslider makeup">
+                    <li class="item_pick"><a href="#"><img src="img/main/@tmp_tab.png" alt=""><span class="pick_desc">24/7 메이크업1</span></a></li>
+                    <li class="item_pick"><a href="#"><img src="img/main/@tmp_tab.png" alt=""><span class="pick_desc">24/7 메이크업2</span></a></li>
+                    <li class="item_pick"><a href="#"><img src="img/main/@tmp_tab.png" alt=""><span class="pick_desc">24/7 메이크업3</span></a></li>
+                    <li class="item_pick"><a href="#"><img src="img/main/@tmp_tab.png" alt=""><span class="pick_desc">24/7 메이크업4</span></a></li>
                 </ul>
             </div>
         </div>
         <div class="section_foot_menu">
             <ul>
-                <li><a href="#">아이티웨딩소개</a></li>
-                <li><a href="#">상담신청</a></li>
-                <li><a href="#">오시는길</a></li>
-                <li><a href="#">카카오톡상담</a></li>
-                <li><a href="#">네이버톡톡상담</a></li>
-                <li><a href="#">상담전화</a></li>
+                <li class="item_foot"><a href="#">아이티웨딩소개</a></li>
+                <li class="item_foot"><a href="#">상담신청</a></li>
+                <li class="item_foot"><a href="#">오시는길</a></li>
+                <li class="item_foot"><a href="#">카카오톡상담</a></li>
+                <li class="item_foot"><a href="#">네이버톡톡상담</a></li>
+                <li class="item_foot"><a href="#">상담전화</a></li>
             </ul>
         </div>
         <!-- 플래너 모집 banner bg color 인라인 반영 -->
-        <div class="section_banner" style="">
-        <a href="#"><img src="" alt="행복한 결혼을 만들어 갈 웨딩플래너 모집"></a>
+        <div class="section_banner" style="background-color:#f8e8b5">
+        <a href="#"><img src="img/main/banner.png" alt="행복한 결혼을 만들어 갈 웨딩플래너 모집" width="320"></a>
         </div>
     </div>
     <!-- menu test용 script -->
@@ -153,9 +163,14 @@
     <script type="text/javascript" src="http://m.itwed.co.kr/js/main.js"></script>
     <script type="text/javascript" src="http://m.itwed.co.kr/js/jquery/jquery.bxslider.min.js"></script>
     <script>
-    $(document).ready(function(){
     $('.bxslider').bxSlider();
-    });
+    $(".rolling_pick .bx-wrapper").eq(0).addClass('on');
+    $('.tab_inner li').on('click',function(e){
+        e.preventDefault();
+        $(this).addClass('on').siblings().removeClass('on');
+        var idx = $(this).index()
+        $('.rolling_pick .bx-wrapper').eq(idx).addClass('on').siblings().removeClass('on');
+    })
     </script>
 </body>
 </html>
